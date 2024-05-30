@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/theme_swiper_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/container_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/status_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <com.example.design.ui.xml.widgets.base.SettingsBackgroundLinearLayout
+            android:id="@+id/content_background_lt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp">
+
+            <com.example.design.ui.xml.widgets.base.SettingsSurfaceRecyclerView
+                android:id="@+id/primary_rv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <com.example.design.ui.xml.widgets.base.SettingsSurfaceRecyclerView
+                android:id="@+id/secondary_right_rv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp" />
+
+            <com.example.design.ui.xml.widgets.base.SettingsSurfaceRecyclerView
+                android:id="@+id/secondary_left_rv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp" />
+
+            <com.example.design.ui.xml.widgets.base.SettingsSurfaceConstraintLayout
+                android:id="@+id/lorem_ipsum_lt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="8dp">
+
+                <com.example.design.ui.xml.widgets.base.SettingsSecondaryTextView
+                    android:id="@+id/lorem_ipsum_1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="@string/lorem_ipsum_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.7" />
+
+                <com.example.design.ui.xml.widgets.base.SettingsSurfaceTextView
+                    android:id="@+id/lorem_ipsum_2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="4dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:text="@string/lorem_ipsum_8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lorem_ipsum_1_tv"
+                    app:layout_constraintWidth_percent="0.7" />
+
+            </com.example.design.ui.xml.widgets.base.SettingsSurfaceConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp">
+
+                <com.example.design.ui.xml.widgets.base.SettingsBaseTabLayout
+                    android:id="@+id/color_scheme_type_tl"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    app:tabIndicator="@drawable/r18"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextAppearance="@style/BaseTab"
+                    app:tabTextAppearance="@style/BaseTab" />
+
+                <com.example.design.ui.xml.widgets.base.SettingsBaseTabLayout
+                    android:id="@+id/direction_tl"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/color_scheme_type_tl"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_marginTop="16dp"
+                    app:tabIndicator="@drawable/r18"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextAppearance="@style/BaseTab"
+                    app:tabTextAppearance="@style/BaseTab" />
+
+                <com.example.design.ui.xml.widgets.base.SettingsBaseTabLayout
+                    android:id="@+id/mode_tl"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/direction_tl"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:layout_marginTop="16dp"
+                    app:tabIndicator="@drawable/r18"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabMode="fixed"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextAppearance="@style/BaseTab"
+                    app:tabTextAppearance="@style/BaseTab" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <com.example.design.ui.xml.widgets.color_picker.ColorPickerView
+                    android:id="@+id/color_picker"
+                    android:layout_width="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintWidth_percent="0.7"
+                    android:layout_height="match_parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.example.design.ui.xml.widgets.base.SettingsBackgroundLinearLayout>
+
+        <View
+            android:id="@+id/navigation_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

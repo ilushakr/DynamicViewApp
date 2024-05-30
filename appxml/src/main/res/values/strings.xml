@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">appXML</string>
+    <string name="corner_dp">Corner radius is %1$.0f dp\nText size is %2$.0f sp</string>
+</resources>

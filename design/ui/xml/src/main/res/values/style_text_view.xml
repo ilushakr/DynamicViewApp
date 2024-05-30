@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="isFixedTextSize" format="boolean" />
+    <attr name="isFixedTextCornerRadius" format="boolean" />
+    <attr name="textViewCornerRadius" format="dimension" />
+
+    <declare-styleable name="BaseTextView">
+        <attr name="isFixedTextSize" />
+        <attr name="isFixedTextCornerRadius" />
+        <attr name="android:textSize" />
+        <attr name="textViewCornerRadius" />
+    </declare-styleable>
+
+    <style name="FixedBaseTextView">
+        <item name="isFixedTextSize">true</item>
+        <item name="isFixedTextCornerRadius">true</item>
+        <item name="textViewCornerRadius">8dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

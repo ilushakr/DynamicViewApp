@@ -1,0 +1,39 @@
+{
+  "lightTheme": {
+    "backgroundColor": -524815,
+    "surfaceColor": -524815,
+    "primarySurfaceColor": -3161623,
+    "secondaryBackgroundColor": -8516,
+    "systemBarsColor": -10779599,
+    "backgroundDarkColor": -8209081,
+    "secondaryBackgroundDarkColor": -3372217,
+    "primaryDarkColor": -9678687,
+    "primaryColor": -7113777,
+    "secondaryColor": -9204019,
+    "primaryColorAngle": -2.9922464,
+    "template": {
+      "type": "Triangle",
+      "typeAngle": 120,
+      "direction": "Forward"
+    }
+  },
+  "darkTheme": {
+    "backgroundColor": -13421776,
+    "surfaceColor": -11776952,
+    "primarySurfaceColor": -17220,
+    "secondaryBackgroundColor": -4076055,
+    "systemBarsColor": -14277084,
+    "backgroundDarkColor": -3355577,
+    "secondaryBackgroundDarkColor": -11507552,
+    "primaryDarkColor": -3389625,
+    "primaryColor": -38551,
+    "secondaryColor": -21143,
+    "primaryColorAngle": -1.569444,
+    "template": {
+      "type": "Triangle",
+      "typeAngle": 120,
+      "direction": "Reversed"
+    }
+  },
+  "mode": "Light"
+}

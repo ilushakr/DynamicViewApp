@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.design.ui.xml.widgets.base.BackgroundConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.design.ui.xml.widgets.base.SecondaryTextView
+        android:id="@+id/lorem_ipsum_1_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:elevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:text="@string/lorem_ipsum_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <com.example.design.ui.xml.widgets.base.SurfaceTextView
+        android:id="@+id/lorem_ipsum_2_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="8dp"
+        android:text="@string/lorem_ipsum_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lorem_ipsum_1_tv"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second" />
+
+    <com.example.design.ui.xml.widgets.base.BackgroundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/corner_radius_ll">
+
+        <com.example.design.ui.xml.widgets.base.SurfaceTextView
+            style="@style/FixedBaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Text Size" />
+
+        <com.example.design.ui.xml.widgets.base.PrimarySlider
+            android:id="@+id/text_size_slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:haloRadius="12dp"
+            app:labelBehavior="floating" />
+
+    </com.example.design.ui.xml.widgets.base.BackgroundLinearLayout>
+
+    <com.example.design.ui.xml.widgets.base.BackgroundLinearLayout
+        android:id="@+id/corner_radius_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.example.design.ui.xml.widgets.base.SecondaryTextView
+            style="@style/FixedBaseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Corner Radius" />
+
+        <com.example.design.ui.xml.widgets.base.SecondarySlider
+            android:id="@+id/corner_slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:haloRadius="12dp"
+            app:labelBehavior="floating" />
+
+    </com.example.design.ui.xml.widgets.base.BackgroundLinearLayout>
+
+</com.example.design.ui.xml.widgets.base.BackgroundConstraintLayout>

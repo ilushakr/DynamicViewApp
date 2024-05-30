@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="status_bar_view" type="id"/>
+    <item name="navigation_bar_view" type="id"/>
+
+    <item name="triangle_scheme_tab_id" type="id"/>
+    <item name="analog_scheme_tab_id" type="id"/>
+
+    <item name="forward_direction_tab_id" type="id"/>
+    <item name="reversed_direction_tab_id" type="id"/>
+
+    <item name="light_mode_tab_id" type="id"/>
+    <item name="dark_mode_tab_id" type="id"/>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.design.ui.xml.widgets.base.BackgroundConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <com.example.design.ui.xml.widgets.base.SecondaryTextView
+            android:id="@+id/lorem_ipsum_1_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="@string/lorem_ipsum_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <com.example.design.ui.xml.widgets.base.SurfaceTextView
+            android:id="@+id/lorem_ipsum_2_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="8dp"
+            android:text="@string/lorem_ipsum_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lorem_ipsum_1_tv"
+            app:layout_constraintWidth_percent="0.7" />
+
+        <View
+            android:id="@+id/myview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </com.example.design.ui.xml.widgets.base.BackgroundConstraintLayout>
+
+</FrameLayout>

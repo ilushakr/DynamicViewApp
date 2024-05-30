@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="jbr-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/appcompose" />
+            <option value="$PROJECT_DIR$/appxml" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/base/initializator" />
+            <option value="$PROJECT_DIR$/design" />
+            <option value="$PROJECT_DIR$/design/provider" />
+            <option value="$PROJECT_DIR$/design/provider/api" />
+            <option value="$PROJECT_DIR$/design/provider/impl" />
+            <option value="$PROJECT_DIR$/design/resources" />
+            <option value="$PROJECT_DIR$/design/ui" />
+            <option value="$PROJECT_DIR$/design/ui/xml" />
+            <option value="$PROJECT_DIR$/persistence" />
+            <option value="$PROJECT_DIR$/persistence/api" />
+            <option value="$PROJECT_DIR$/persistence/impl_room_db" />
+            <option value="$PROJECT_DIR$/preferences" />
+            <option value="$PROJECT_DIR$/preferences/api" />
+            <option value="$PROJECT_DIR$/preferences/impl" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.design.provider.impl">
+
+    <application>
+
+        <provider
+            android:name="com.example.base.initializator.InitializationProvider"
+            android:authorities="${applicationId}.initializator"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="com.example.design.provider.impl.di.Initializer"
+                android:value="@string/value_initialization" />
+        </provider>
+    </application>
+
+</manifest>

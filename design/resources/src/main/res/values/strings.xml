@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lorem_ipsum_24">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac sodales ex. Curabitur tincidunt ipsum nec ultrices scelerisque. Pellentesque ipsum eros, auctor vitae lobortis.</string>
+    <string name="lorem_ipsum_8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+</resources>
